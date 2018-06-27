@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">有车资产</string>
+
+    <string name="button_allow">允许</string>
+    <string name="button_deny">拒绝</string>
+    <string name="button_enter">确定</string>
+    <string name="button_cancel">取消</string>
+    <!-- Permission -->
+    <string name="permission_write_rationale">使用此功能需要打开存储权限</string>
+    <string name="permission_write_denied">你拒绝了权限，该功能不可用</string>
+    <string name="permission_write_never_ask">用户设置不再询问权限申请</string>
+    <string name="permission_location">您需要打开定位权限</string>
+    <string name="permission_phone">您需要打开拨打电话权限</string>
+
+    <string name="exit_application">再按一次，退出程序</string>
+    <string name="smscode_hint_format_more" formatted="false">%d秒后%s</string>
+    <string name="smscode_hint_format">%ds</string>
+</resources>

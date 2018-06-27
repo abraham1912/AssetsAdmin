@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4c00</color>
+    <color name="safe_mode_text">#80ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_333">#333333</color>
+    <color name="text_999">#999999</color>
+    <color name="main_bg">#eeeeee</color>
+    <color name="main_color">#ff4c00</color>
+    <color name="login_line">#e5e5e5</color>
+    <drawable name="text_selected">#ff4c00</drawable>
+    <drawable name="text_default">#333333</drawable>
+</resources>
