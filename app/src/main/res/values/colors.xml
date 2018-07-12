@@ -9,10 +9,16 @@
     <color name="red">#ffff0000</color>
     <color name="transparent">#00000000</color>
     <color name="text_333">#333333</color>
+    <color name="text_666">#666666</color>
     <color name="text_999">#999999</color>
     <color name="main_bg">#eeeeee</color>
+    <color name="line_bg">#c1c1c1</color>
+    <color name="dialog_bg">#f6f6f6</color>
+    <color name="bg_f3f3">#f3f3f3</color>
     <color name="main_color">#ff4c00</color>
     <color name="login_line">#e5e5e5</color>
     <drawable name="text_selected">#ff4c00</drawable>
+    <drawable name="text_selected_white">#ffffffff</drawable>
     <drawable name="text_default">#333333</drawable>
+    <drawable name="text_default_999">#999999</drawable>
 </resources>

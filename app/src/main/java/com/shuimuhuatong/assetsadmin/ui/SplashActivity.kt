@@ -14,7 +14,7 @@ class SplashActivity : BaseActivity() {
        Handler().postDelayed(Runnable {
            startActivity(Intent(this,MainActivity::class.java))
            finish()
-       },1500);
+       },1500)
     }
 
     override fun initData() {

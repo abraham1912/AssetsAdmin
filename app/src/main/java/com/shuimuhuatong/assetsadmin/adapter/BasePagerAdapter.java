@@ -13,9 +13,9 @@ import java.util.List;
 
 public class BasePagerAdapter extends FragmentStatePagerAdapter {
     private ArrayList<Fragment> fragmentList;
-    private ArrayList<String> titleList;
+    private String[] titleList;
 
-    public BasePagerAdapter(FragmentManager fm, ArrayList<Fragment> fragmentList, ArrayList<String> titleList) {
+    public BasePagerAdapter(FragmentManager fm, ArrayList<Fragment> fragmentList, String[] titleList) {
         super(fm);
         this.fragmentList = fragmentList;
         this.titleList = titleList;
@@ -34,7 +34,7 @@ public class BasePagerAdapter extends FragmentStatePagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        return titleList.get(position);
+        return titleList[position];
     }
 
     @Override
@@ -42,7 +42,7 @@ public class BasePagerAdapter extends FragmentStatePagerAdapter {
         return PagerAdapter.POSITION_NONE;
     }
 
-    public void recreateItems(ArrayList<Fragment> fragmentList, ArrayList<String> titleList) {
+    public void recreateItems(ArrayList<Fragment> fragmentList, String[] titleList) {
         this.fragmentList = fragmentList;
         this.titleList = titleList;
         notifyDataSetChanged();

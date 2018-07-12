@@ -3,6 +3,7 @@ package com.common.wangchong.commonutils.base;
 import android.annotation.SuppressLint;
 import android.arch.lifecycle.Lifecycle;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -26,6 +27,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 固定竖屏
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         this.mContext = this;
     }
 
@@ -39,6 +42,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         initData();
 
     }
+
+
 
     /**
      * 初始化 Toolbar

@@ -1,0 +1,27 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/tool_bar"/>
+
+        <android.support.v7.widget.RecyclerView
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="true"
+            android:scrollbarFadeDuration="1"
+            android:scrollbars="vertical"
+            app:layoutManager="LinearLayoutManager">
+        </android.support.v7.widget.RecyclerView>
+    <Button
+        android:layout_gravity="bottom|center_horizontal"
+        style="@style/submit"
+        android:text="删除"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_15"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

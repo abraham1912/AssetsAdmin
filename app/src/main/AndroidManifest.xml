@@ -22,14 +22,44 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.MainActivity" />
-        <activity android:name=".ui.task.TaskListActivity" />
+        <activity
+            android:name=".ui.task.TaskListActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
         <activity android:name=".ui.HistoryListActivity" />
         <activity
             android:name=".ui.user.LoginActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionbar.FullScreen" />
         <activity android:name=".ui.user.PasswordActivity" />
-        <activity android:name=".ui.user.NewPasswordActivity"></activity>
+        <activity android:name=".ui.user.NewPasswordActivity" />
+        <activity android:name=".ui.search.BaseSearchActivity" />
+        <activity
+            android:name=".ui.search.LibActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:name=".ui.search.PreLibActivity" />
+        <activity
+            android:name=".ui.search.SearchCarActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".ui.user.ChangePhoneActivity" />
+        <activity android:name=".ui.user.UserInfoActivity" />
+        <activity android:name=".ui.user.WorkDateActivity" />
+        <activity android:name=".ui.user.UpdateUserInfoActivity" />
+        <activity android:name=".ui.other.CarDetailActivity" />
+        <activity android:name=".ui.faultwork.StartFaultWorkActivity" />
+        <activity android:name=".ui.faultwork.SelectErrorActivity" />
+        <activity android:name=".ui.faultwork.SubmitFaultActivity" />
+        <activity android:name=".ui.faultwork.DeleteFaultActivity" />
+        <!-- 软键盘升起布局上移 -->
+        <activity
+            android:name=".ui.accidentwork.StartAccidentWorkActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.accidentwork.DriverActivity" />
+        <activity
+            android:name=".ui.accidentwork.AddAccidentInfoActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".ui.accidentwork.RepairFactoryActivity"></activity>
     </application>
 
 </manifest>

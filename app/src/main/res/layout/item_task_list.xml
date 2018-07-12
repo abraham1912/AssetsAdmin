@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/dp_4"
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/dp_0.7"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/dp_15"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/jingxuanIV"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:src="@mipmap/jing_xuan"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/license"
+                    android:layout_toRightOf="@+id/jingxuanIV"
+                    android:text="宝马"
+                    android:textSize="@dimen/sp_15"
+                    android:gravity="center"
+                    android:textColor="@color/text_333"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/orderStatusName"
+                    android:text="宝马"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/text_333"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/orderTypeName"
+                    android:text="宝马"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/text_333"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/orderUpdateTime"
+                    android:text="宝马"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/text_333"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/orderOperateName"
+                    android:text="宝马"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/text_333"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

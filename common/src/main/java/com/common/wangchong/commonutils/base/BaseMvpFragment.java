@@ -11,7 +11,7 @@ public abstract class BaseMvpFragment <T extends IBasePresenter>  extends BaseFr
     /**
      * 使用MVP的Activity使用这个类
      */
-    protected T presenter;
+     protected T presenter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

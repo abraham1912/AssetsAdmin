@@ -91,6 +91,11 @@ dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     //
     api 'org.jetbrains.anko:anko:0.10.1'
+    //日历
+    api 'cn.aigestudio.datepicker:DatePicker:2.2.0'
+   //拍照，选择图片
+    api 'com.github.crazycodeboy:TakePhoto:v4.1.0'
+
 }
 apply plugin: 'kotlin-android'
 repositories {

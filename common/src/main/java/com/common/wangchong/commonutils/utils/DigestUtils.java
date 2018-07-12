@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 public class DigestUtils {
-	private static final String SIGN_KEY = "MhxzKhl";
+	private static final String SIGN_KEY = "HoslySns";
 	public static String getMD5(String src) {
 		MessageDigest digester = null;
 		try {

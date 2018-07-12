@@ -1,9 +1,7 @@
 package com.shuimuhuatong.assetsadmin.ui.user
 
-import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
-import android.text.InputType
 import android.text.TextUtils
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
@@ -11,12 +9,15 @@ import com.common.wangchong.commonutils.base.BaseActivity
 import com.common.wangchong.commonutils.utils.DigestUtils
 import com.common.wangchong.commonutils.utils.HandlerHttpError
 import com.common.wangchong.commonutils.utils.RetrofitFactory
+import com.shuimuhuatong.assetsadmin.AssetsAdmin
 import com.shuimuhuatong.assetsadmin.R
 import com.shuimuhuatong.assetsadmin.api.ILoginApi
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_login.*
-import org.jetbrains.anko.*
+import org.jetbrains.anko.alert
+import org.jetbrains.anko.okButton
+import org.jetbrains.anko.toast
 
 
 class LoginActivity : BaseActivity() {
@@ -39,8 +40,8 @@ class LoginActivity : BaseActivity() {
                 return@setOnClickListener
             }
             val map = hashMap
-            map["loginId"] = "liaixin"
-            map["password"] = "12345"
+            map["phone"] = phone.text.trim().toString()
+            map["password"] = password.text.trim().toString()
             map["sign"] = DigestUtils.makeVeriSign(map)
             RetrofitFactory.getRetrofit().create(ILoginApi::class.java).loginIn(map)
                     .subscribeOn(Schedulers.io())
@@ -51,6 +52,7 @@ class LoginActivity : BaseActivity() {
                             if (userInfo.ret != 0) {
                                 toast(userInfo.msg)
                             }else{   //登录成功
+                                AssetsAdmin.getInstance().userInfo = userInfo.content
                                 finish()
                             }
                         }
@@ -80,21 +82,5 @@ class LoginActivity : BaseActivity() {
         setContentView(R.layout.activity_login)
     }
 
-//    override fun onDestroy() {
-//        super.onDestroy()
-//        mapView.onDestroy()
-//
-//    }
-//
-//    override fun onPause() {
-//        super.onPause()
-//        mapView.onPause()
-//    }
-//
-//    override fun onResume() {
-//        super.onResume()
-//        mapView.onResume()
-//
-//    }
 
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_10"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/checkText"
+        android:layout_width="60dp"
+        android:layout_height="22dp"
+        android:background="@drawable/shape_gray_bg_2"
+        android:text="故障"
+        android:gravity="center"
+        android:button="@null"
+        android:clickable="false"
+        android:textSize="@dimen/sp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@drawable/selector_text_dialog"/>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/main_bg"
+    android:gravity="center_horizontal"
+    tools:context=".ui.user.PasswordActivity">
+    <include layout="@layout/tool_bar"/>
+    <EditText
+        android:id="@+id/oldPhoneNum"
+        android:layout_width="295dp"
+        android:layout_height="@dimen/dp_44"
+        android:background="@drawable/shape_login_bg"
+        android:hint="请输入旧手机号"
+        android:maxLength="11"
+        android:drawableLeft="@mipmap/phone"
+        android:drawablePadding="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_20"
+        android:textColor="@color/text_333"
+        android:inputType="phone"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginTop="25dp"
+        android:text="" />
+    <EditText
+        android:id="@+id/newPhoneNum"
+        android:layout_width="295dp"
+        android:layout_height="@dimen/dp_44"
+        android:background="@drawable/shape_login_bg"
+        android:hint="请输入新手机号"
+        android:maxLength="11"
+        android:drawableLeft="@mipmap/phone"
+        android:drawablePadding="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_20"
+        android:textColor="@color/text_333"
+        android:inputType="phone"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="" />
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="295dp"
+        android:layout_height="@dimen/dp_44">
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="295dp"
+            android:layout_height="@dimen/dp_44"
+            android:background="@drawable/shape_login_bg"
+            android:hint="请输入验证码"
+            android:maxLength="6"
+            android:drawableLeft="@mipmap/key"
+            android:drawablePadding="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:textColor="@color/text_333"
+            android:inputType="number"
+            android:textSize="@dimen/sp_14"
+            android:text="" />
+        <com.shuimuhuatong.assetsadmin.view.CountDownTextView
+            android:id="@+id/sendCode"
+            style="@style/sendcode"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:enabled="false"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:text="获取"
+            app:timeInterval="1"
+            android:textSize="@dimen/sp_14"
+            android:layout_height="@dimen/dp_40" />
+    </RelativeLayout>
+
+</LinearLayout>

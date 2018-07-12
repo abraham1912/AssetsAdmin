@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/buttonBar"
+    android:background="@android:color/transparent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:id="@+id/dialog"
+        android:layout_width="80dp"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:text="车型"
+            android:textSize="14sp"
+            android:textColor="@color/text_666"
+            android:paddingLeft="@dimen/dp_15"
+            android:background="@color/main_bg"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/carTypeRecyclerView"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/workStateTV"
+            android:text="工单状态"
+            android:textSize="@dimen/sp_12"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_15"
+            android:textColor="@color/text_666"
+            android:background="@color/main_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/workStateRecyclerView"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:text="续航里程"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/text_666"
+            android:paddingLeft="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:background="@color/main_bg"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/dp_30" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/milesRecyclerView"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:text="持续时长"
+            android:textSize="@dimen/sp_12"
+            android:paddingLeft="@dimen/dp_15"
+            android:textColor="@color/text_666"
+            android:background="@color/main_bg"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="@dimen/dp_30" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/timeRecyclerView"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+<RelativeLayout
+    android:background="@color/white"
+    android:layout_marginLeft="80dp"
+    android:layout_below="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:weightSum="5"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/reset"
+                android:text="重置"
+                android:textColor="@color/main_color"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@color/white"
+                android:layout_height="@dimen/dp_30" />
+            <Button
+                android:id="@+id/submit"
+                android:text="@string/button_enter"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@drawable/shape_submit_bg"
+                android:layout_height="@dimen/dp_30" />
+        </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

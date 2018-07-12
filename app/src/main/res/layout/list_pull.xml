@@ -8,6 +8,7 @@
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:paddingTop="@dimen/dp_72"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -15,8 +16,9 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:fadeScrollbars="true"
+            android:layout_margin="@dimen/dp_15"
             android:scrollbarFadeDuration="1"
             android:scrollbars="vertical"
             app:layoutManager="LinearLayoutManager">

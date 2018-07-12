@@ -26,7 +26,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class RetrofitFactory {
-    public static final String BASE_URL = "http://218.240.21.134:8084";
+    //public static final String BASE_URL = "http://218.240.21.134:8084";
+    public static final String BASE_URL = "http://172.16.82.187:8092";
     /**
      * 缓存机制
      * 在响应请求之后在 data/data/<包名>/cache 下建立一个response 文件夹，保持缓存数据。
